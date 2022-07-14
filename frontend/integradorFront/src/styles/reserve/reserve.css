@@ -1,0 +1,40 @@
+.container-reserve {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe4ea;
+  display: flex;
+  padding-bottom: 15px;
+
+}
+
+.l-container-reserve {
+  width: 65%;
+  min-height: 100%;
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px) {
+  .container-reserve {
+    flex-direction: column;
+  }
+
+  .l-container-reserve {
+    width: 100%;
+  }
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px) {
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+}

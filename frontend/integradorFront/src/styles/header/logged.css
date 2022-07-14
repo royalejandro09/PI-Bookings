@@ -1,0 +1,127 @@
+.initUser__aux {
+  display: flex;
+}
+
+.initUser__aux .initials {
+  background-color: var(--color_third);
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.initUser__aux .initials span {
+  color: var(--color_fourth);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.initUser__aux p {
+  color: var(--color_secondary);
+}
+
+.initUser__aux span {
+  color: var(--color_primary);
+  font-weight: bold;
+}
+
+.initUser__aux p {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.initUser__aux .closeIcon {
+  padding: 0px;
+  cursor: pointer;
+}
+
+.downMenu__user__sign-off {
+  border-bottom: 1px solid var(--color_third);
+  padding: 5px;
+}
+
+.downMenu__user__sign-off p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.downMenu__user__sign-off span {
+  color: var(--color_primary);
+}
+
+.container-main-header {
+  display: flex;
+}
+
+.container-admin {
+  padding-right: 8px;
+  border: 0px;
+  border-right: 1px;
+  border-color: var(--color_primary);
+  border-style: solid;
+  display: flex;
+  align-items: center;
+}
+
+.container-admin .p-admin {
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+  .initUser__aux {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .initUser__aux p {
+    align-items: flex-end;
+    margin: 8px 10px 8px 0px;
+  }
+  .initUser__aux .initials {
+    background-color: var(--color_fourth);
+  }
+  .initUser__aux .initials span {
+    color: var(--color_third);
+  }
+  .initUser__aux p {
+    color: var(--color_fourth);
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .initUser__aux span {
+    color: var(--color_third);
+  }
+  .initUser__aux p:nth-child(3) {
+    display: none;
+  }
+
+  .container-admin {
+    padding: 10px 10px 0 10px;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: black;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .container-main-header {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .container-admin .p-admin {
+    text-align: center;
+    color: white;
+  }
+}

@@ -1,0 +1,32 @@
+.container-date-select {
+  padding: 25px 15px 20px 30px;
+  width: 100%;
+}
+
+.h2-date-select {
+  color: var(--color_secondary);
+  padding-bottom: 15px;
+}
+
+.calendar-date-select {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.253);
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px) {
+  .container-date-select {
+    padding: 25px 30px 20px 30px;
+  }
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+  .container-date-select {
+    padding: 25px 10px 20px 10px;
+  }
+}

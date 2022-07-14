@@ -1,0 +1,33 @@
+.container-add-politics{
+    padding: 20px;
+}
+
+.h3-add-politics{
+    padding-top: 10px;
+}
+
+.container-politic-add-politic{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px){
+
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px){
+    
+}

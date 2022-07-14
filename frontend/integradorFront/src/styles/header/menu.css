@@ -1,0 +1,89 @@
+.menu{
+    height: 100vh;
+    width: 303px;
+    background-color: var(--color_primary);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu--active{
+    right: 0;
+}
+
+.menu--disable{
+    overflow: hidden;
+    right: -500px;
+}
+
+.closeIcon{
+    color: var(--color_third);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    padding: 14px;
+}
+
+.upMenu{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuText{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+}
+
+.downMenu{
+    color: var(--color_third);
+    height: 100%;
+    width: 100%;
+    background-color: var(--color_fourth);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.downMenu .downMenu__user{
+    padding: 30px 10px;
+}
+
+.downMenu .downMenu__networks, .downMenu__networks span{
+    color: var(--color_third);
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.downMenu__networks span{
+    font-size: 25px;
+}
+
+.downMenu__register{
+    padding-bottom: 10px;
+}
+
+.downMenu__register, .downMenu__login{
+    text-decoration: none;
+    color: var(--color_third);
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+/* --- Tablet - Mobile --- */
+
+@media (min-width: 601px) {
+    .menu{
+        display: none;
+    }
+}

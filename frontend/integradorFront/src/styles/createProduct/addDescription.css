@@ -1,0 +1,124 @@
+.add-description-group-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 15px;
+}
+
+.add-description-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.label-add-description {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.input-add-description {
+  border-style: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.input-add-description:focus {
+  outline: none;
+  border: 3px solid var(--color_primary);
+}
+
+.input-add-description::placeholder {
+  font-weight: 700;
+}
+
+.input-add-description-text {
+  max-height: 200px;
+  min-height: 200px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.container-drop-down-form-create-product {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.input-drop-down-create-product {
+  border-style: none;
+  height: 100%;
+  width: 95%;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+
+.icon-arrow-create-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--color_primary);
+}
+
+.drop-down-container {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 25%);
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  top: 45px;
+  z-index: 10;
+  padding: 0px 15px;
+}
+.container-element {
+  padding: 5px 0px 5px 0px;
+  border: 0px;
+  border-bottom: 1px;
+  border-color: var(--color_primary);
+  border-style: solid;
+}
+
+.p-element:hover {
+  background-color: #f0572dbd;
+  border-radius: 5px;
+}
+.container-element:last-child {
+  border: 0px;
+}
+
+.p-element {
+  padding: 15px;
+  font-weight: 700;
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px) {
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+  .add-description-group-field {
+    flex-direction: column;
+    padding-bottom: 0px;
+    padding-top: 15px;
+  }
+}

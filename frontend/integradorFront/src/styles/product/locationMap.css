@@ -1,0 +1,29 @@
+.h2-location-map {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: var(--color_secondary);
+    border: 0px;
+    border-bottom: 2px;
+    border-color: var(--color_primary);
+    border-style: solid;
+}
+
+.h3-location-map{
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.location-map-container{
+    padding: 10px 30px;
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+
+.location-map{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}

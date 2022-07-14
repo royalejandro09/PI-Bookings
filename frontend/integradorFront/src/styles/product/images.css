@@ -1,0 +1,116 @@
+.container-images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.icon-images__share {
+  font-size: 25px;
+  padding-left: 40px;
+}
+
+.icon-images__heart {
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+div .container-images__container {
+  width: 100%;
+  height: 450px;
+  padding: 10px 60px 0px 40px;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+}
+
+div .container-images__board {
+  border-radius: 10px;
+  background-color: var(--color_fourth);
+}
+
+.container-images__main {
+  grid-row: 1/3;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color_fourth);
+}
+
+.img__main {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.container-images__board {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.img__secondary {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-images__board_last {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  background-color: var(--color_fourth);
+}
+.container-images__board__ancor {
+  color: var(--color_fourth);
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+  text-shadow: black;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+/* --- Tablet --- */
+
+@media (max-width: 1024px) {
+  div .container-images__container {
+    display: none;
+  }
+  .container-images {
+    justify-content: flex-start;
+  }
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 600px) {
+  .container-images {
+    position: relative;
+  }
+
+  .container-images__icons {
+    position: absolute;
+    top: 20px;
+    z-index: 100;
+    color: white;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+  }
+
+  .icon-images__share {
+    padding-left: 10px;
+  }
+}
